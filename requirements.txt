@@ -1,0 +1,60 @@
+# Core Flask and API
+flask==3.0.3
+gunicorn==23.0.0  # Production WSGI server
+pydantic==2.9.2  # Data validation for schemas
+python-dotenv==1.0.1  # Environment variables
+
+# Database and ORM
+sqlalchemy==2.0.35  # ORM for models
+alembic==1.13.3  # Database migrations
+psycopg2-binary==2.9.9  # PostgreSQL driver (adjust for other DBs)
+
+# Async Tasks
+celery==5.4.0
+redis==5.0.8  # Redis for Celery and caching
+
+# AI and NLP Models
+transformers==4.44.2  # Hugging Face for LLaMA, T5, BERT, etc.
+torch==2.4.1  # PyTorch for model inference
+torchvision==0.19.1  # For CLIP
+sentence-transformers==3.1.1  # Sentence-BERT for embeddings
+fasttext==0.9.3  # Language detection
+doctr==0.8.1  # OCR for document extraction
+camelot-py==0.11.0  # Table extraction
+opencv-python==4.10.0.84  # Image processing for charts/images
+peft==0.12.0  # LoRA for fine-tuning
+onnx==1.16.2  # Model optimization
+openai==1.50.0  # Optional OpenAI embeddings (requires API key)
+
+# Vector Storage
+chromadb==0.5.5  # Chroma for vector search
+
+# AWS Integration
+boto3==1.35.24  # AWS SDK for S3 and Sagemaker
+sagemaker==2.231.0  # Sagemaker model hosting
+
+# Monitoring and Logging
+prometheus-flask-exporter==0.23.1  # Prometheus metrics
+structlog==24.4.0  # Structured logging
+
+# Testing
+pytest==8.3.3
+pytest-cov==5.0.0  # Coverage reports
+pytest-asyncio==0.24.0  # Async tests
+factory-boy==3.3.1  # Test fixtures
+
+# Development Tools
+black==24.8.0  # Code formatting
+ruff==0.6.8  # Linting
+isort==5.13.2  # Import sorting
+mypy==1.11.2  # Type checking
+
+# Security
+pyjwt==2.9.0  # JWT for authentication
+cryptography==43.0.1  # Secure token handling
+
+# Utilities
+requests==2.32.3  # HTTP requests
+numpy==1.26.4  # Numerical operations
+pandas==2.2.3  # Data handling for tables
+pillow==10.4.0  # Image processing
